@@ -17,7 +17,10 @@
     <p>
       I set up a speedtest to test COSI's internet bandwidth, using a piece of software called <a href="https://www.perfsonar.net/about/" target="_blank">perfSonar</a>. After a bit of configuration and testing, I was able to achieve 6.25Gb/s to Syracuse, NY. I tried testing against other locations, but it was not as fast for unclear reasons.
     </p>
-    <h3>Forum Topics, Lightning Talks</h3>
+    <p>
+      <img src="speed.png"></img>
+    </p>
+<h3>Forum Topics, Lightning Talks</h3>
     <ul>
       <li><a href="http://netmon1.clarkson.edu" target="_blank">netmon1.clarkson.edu</a> (a replacement for Shep)</li>
       <li>6.25 Fasts per Second</li>
@@ -26,11 +29,10 @@
     </ul>
     <h3>Workshops</h3>
     <ul>
+      <li>IgniteCS Team Lead (for CS Outreach program)</li>
+      <li>PGP Keysigning Party</li>
       <li>Ethernet Crimping Workshop (x2)</li>
     </ul>
-    <p>
-      <img src="speed.png"></img>
-    </p>
     <h2>Server Room Stuff</h2>
     <p>
       I redid some network infrastructure in the network racks. I implemented STP across the board for all of the managed switches, and to make COSI a bit more segmented so that a switching loop on one part of the room wouldn't affect another, or a switching loop in the ITL wouldn't affect COSI, etc. I also changed the network topography so that bandwidth between machines in COSI and the ITL is much faster to servers in the server room, with the ability to achieve multi-gigabit speeds between servers and the endpoints as a whole. Most notably, a 4G LACP LAG between swm1 and swf1 allows each switch in the lab to be up to 1 hops from the swf1 switch at most, and thus at most 6 hops from the internet. I have not really shown all of the specific switches to the endpoints or servers, nor the particular number of endpoints to make the image more brief.
